@@ -1,0 +1,16 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* This is now used to calculate rem , now 1rem=10px. Otherwise it would be 1rem=16px. 16px is the default text value of the html page.  */
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
