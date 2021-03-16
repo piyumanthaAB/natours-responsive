@@ -10,10 +10,19 @@
     top: 6rem;
     right: 6rem;
     border-radius: 50%;
-    z-index: 40;
+    z-index: 400;
     box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
     text-align: center;
     cursor: pointer;
+
+    @include respond(tab-port) {
+      top: 4rem;
+      right: 4rem;
+    }
+    @include respond(phone) {
+      top: 3rem;
+      right: 3rem;
+    }
   }
   &__background {
     height: 6rem;
@@ -26,16 +35,25 @@
       $color-primary-light,
       $color-primary-dark
     );
-    z-index: 30;
+    z-index: 300;
     // transform: scale(80);
     transition: transform 0.8s cubic-bezier(0.36, -0.09, 0.2, 1.61);
+
+    @include respond(tab-port) {
+      top: 4.5rem;
+      right: 4.5rem;
+    }
+    @include respond(phone) {
+      top: 3.5rem;
+      right: 3.5rem;
+    }
   }
   &__nav {
     height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 35;
+    z-index: 350;
     opacity: 0;
     width: 0;
     transition: all 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
